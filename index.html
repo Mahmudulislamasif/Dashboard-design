@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/dashboard-two.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+
+<body>
+
+  <div class="sidebar close " id="myElement">
+    <div class="logo-details">
+      <img src="./assets/images/icons/logo.png" class="w-6 h-6 mx-[25px]" alt="">
+      <span class="logo_name">Easital</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-file-invoice"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Dashboard</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">eCommerce</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="dashboard-two.html">
+          <i class="las la-envelope"></i>
+          <span class="link_name ">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <h1 class="headings ml-8 my-4 text-gray-400">Apps and pages</h1>
+      <li>
+        <a href="dashboard-two.html" class="active bg-gradient-to-r from-[#76ba5f] to-[#5f89dd]">
+          <i class="las la-envelope"></i>
+          <span class="link_name">Email</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Email</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-comment-alt"></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-tasks"></i>
+          <span class="link_name">To Do</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">To Do</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-calendar-check"></i>
+          <span class="link_name">Calender</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Calender</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">Kanban</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Kanban</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-file-invoice"></i>
+            <span class="link_name">Invoice</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Invoice</a></li>
+          <li><a href="#">List</a></li>
+          <li><a href="#">Preview</a></li>
+          <li><a href="#">Edit</a></li>
+          <li><a href="#">Add</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-file-alt"></i>
+          <span class="link_name">File Manager</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">File Manager</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-shopping-cart"></i>
+            <span class="link_name">Roles</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Roles</a></li>
+          <li><a href="role-list.html">Roles</a></li>
+          <li><a href="#">Permission</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-shopping-cart"></i>
+            <span class="link_name">Commerce</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Commerce</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Wish List</a></li>
+          <li><a href="#">Chackout</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-user"></i>
+            <span class="link_name">Users</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Users</a></li>
+          <li><a href="#">List</a></li>
+          <li><a href="#">View</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-file"></i>
+            <span class="link_name">Pages</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Pages</a></li>
+          <li><a href="#">Account Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Knowledge Base</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Licence</a></li>
+          <li><a href="#">API key</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Main Template</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="las la-user-shield"></i>
+            <span class="link_name">Auth</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Login</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Registar</a></li>
+          <li><a href="#">Forgot password</a></li>
+          <li><a href="#">Reset password</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-stop"></i>
+          <span class="link_name">Modal example</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Modal Example</a></li>
+        </ul>
+      </li>
+      <h1 class="headings ml-8 my-4 text-gray-400">User Interface</h1>
+      <li>
+        <a href="#">
+          <i class="lab la-typo3"></i>
+          <span class="link_name">Typography</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Typography</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="las la-eye"></i>
+          <span class="link_name">Feature</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Feather</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug'></i>
+            <span class="link_name">Cards</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Cards</a></li>
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Advance</a></li>
+          <li><a href="#">Statistics</a></li>
+        </ul>
+
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <nav class="fixed top-0 nav-class">
+      <div class="flex h-[60px] items-center bg-white">
+        <div class="flex">
+          <i class='bx bx-menu text-3xl mx-2'></i>
+
+        </div>
+        <div class="flex-auto bg-blue-100">
+          <input type="search" placeholder="Search here" class=" md:block hidden rounded-md w-full">
+        </div>
+        <i class="las la-bell text-2xl mx-2"></i>
+        <div class="flex mr-4">
+          <div class="mx-2">
+            <h4 class="text-sm font-bold md:block hidden">John Doe</h4>
+            <small class="md:block hidden">Super admin</small>
+          </div>
+          <button id="dropdownDefault" data-dropdown-toggle="dropdown" type="button"> <img
+              src="./assets/images/avatar/avatar1.jpg" class="w-8 h-8 flex items-center rounded-full" alt="">
+          </button>
+          <!-- Dropdown menu -->
+          <div id="dropdown"
+            class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 py-3 text-gray-200 ">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-user text-xl"></span>
+                  <span class="pl-2">Profile</span></a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-envelope text-xl"></span>
+                  <span class="pl-2">Inbox</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-clipboard-check text-xl"></span>
+                  <span class="pl-2">Tasks</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50 mb-3">
+                  <span class="las la-comment-alt text-xl"></span>
+                  <span class="pl-2">Chats</span>
+                </a>
+              </li>
+              <hr>
+
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-cog text-xl"></span>
+                  <span class="pl-2">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-comment-alt text-xl"></span>
+                  <span class="pl-2">Pricing</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-question-circle text-xl"></span>
+                  <span class="pl-2">FAQ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 px-4 hover:text-teal-600 flex items-center hover:bg-teal-50">
+                  <span class="las la-sign-out-alt text-xl"></span>
+                  <span class="pl-2">Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="m-4 py-14">
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-2">
+        <div class="shadow-lg bg-white rounded-lg ">
+          <div class="flex justify-between">
+            <div class="p-3">
+              <h1 class="text-gray-500 mb-2">Congratulations 🎉 Kobe!</h1>
+              <h1 class="mb-2">You have won gold medal</h1>
+              <h1 class="text-blue-500 text-2xl mb-2 text-left">$48.9k</h1>
+              <button class="bg-blue-600 p-3 text-white rounded-sm float-left">View Sales</button>
+            </div>
+            <div>
+              <img src="./assets/images/badge.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="p-2 shadow-lg bg-white rounded-lg">
+          <div class="flex justify-between mb-7 p-4">
+            <h1 class="text-black">Statistics</h1>
+            <h1 class="text-gray-500 flex">Updated 1 month ago</h1>
+          </div>
+          <div class="flex  items-center">
+
+            <h1 class="bg-cyan-100 rounded-full text-cyan-300 mr-2 p-4"><img src="./assets/images/icons/amazon.png"
+                alt="">
+            </h1>
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-bold">8.549k</h1>
+              <h1>Customers</h1>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="p-2 shadow-lg bg-white rounded-lg">
+          <div class="flex justify-between mb-7 p-4">
+            <h1 class="text-black">Statistics</h1>
+            <h1 class="text-gray-500">Updated 1 month ago</h1>
+          </div>
+          <div class="flex items-center">
+            <h1 class="bg-cyan-100 rounded-full text-cyan-300 mr-2 p-4">
+              <img src="./assets/images/icons/amazon.png" alt="">
+            </h1>
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-bold">8.549k</h1>
+              <h1>Customers</h1>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="p-2 shadow-lg bg-white rounded-lg">
+          <div class="flex justify-between mb-7 p-4">
+            <h1 class="text-black">Statistics</h1>
+            <h1 class="text-gray-500">Updated 1 month ago</h1>
+          </div>
+          <div class="flex items-center">
+            <h1 class="bg-cyan-100 rounded-full text-cyan-300 mr-2 p-4">
+              <img src="./assets/images/icons/amazon.png" alt="">
+            </h1>
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-bold">8.549k</h1>
+              <h1>Customers</h1>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mt-3  md:mt-3">
+        <div class=" p-3 shadow-lg bg-white rounded-md">
+          <div class="flex flex-col">
+            <h1 class="text-gray-700">Order</h1>
+            <h1 class="text-2xl font-bold  text-black">2,76k</h1>
+          </div>
+        </div>
+        <div class="p-3 shadow-lg bg-white rounded-md">
+          <div class="flex flex-col">
+            <h1 class="text-gray-700">Profit</h1>
+            <h1 class="text-2xl font-bold  text-black">6,24k</h1>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="p-3 shadow-lg bg-white rounded-md">
+          <div class="flex flex-col">
+            <h1 class="text-gray-700">Earnings</h1>
+            <h1 class="text-2xl font-bold text-black">6,24k</h1>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-blac mt-3">
+        <div class="shadow-lg p-4 text-left  bg-white rounded-md">
+          <div class="my-5 pl-1">
+            <h1 class="text-md text-[#5E587E] mb-2 font-bold">Browser States
+            </h1>
+            <h1 class="text-xs text-[#6E6B">Counter August 2020</h1>
+          </div>
+
+          <div class="flex flex-col text-[#5E5873]">
+            <div class="flex mb-3 justify-between ">
+              <div class="flex items-center mb-3">
+                <img src="./assets/images/icons/google-chrome.png" alt="">
+                <h1 class="ml-4">
+                  Google Chrome
+                </h1>
+              </div>
+              <div>
+                <h1 class="ml-4">54.4%</h1>
+              </div>
+            </div>
+            <div class="flex mb-3 justify-between">
+              <div class="flex mb-3 items-center">
+                <img src="./assets/images/icons/mozila-firefox.png" alt="">
+                <h1 class="ml-4">
+                  Mozila Firefox
+                </h1>
+              </div>
+              <div>
+                <h1>54.4%</h1>
+              </div>
+            </div>
+            <div class="flex mb-3 justify-between">
+              <div class="flex items-center mb-3">
+                <img src="./assets/images/icons/apple-safari.png" alt="">
+                <h1 class="ml-4">
+                  Apple Safari
+                </h1>
+              </div>
+              <div>
+                <h1>54.4%</h1>
+              </div>
+            </div>
+            <div class="flex mb-3 justify-between">
+              <div class="flex items-center mb-3">
+                <img src="./assets/images/icons/internet-explorer.png" alt="">
+                <h1 class="ml-4">
+                  Internet Explorer
+                </h1>
+              </div>
+              <div>
+                <h1>54.4%</h1>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center">
+                <img src="./assets/images/icons/mozila-firefox.png" alt="">
+                <h1 class="ml-4">
+                  Opera Mini
+                </h1>
+              </div>
+              <div>
+                <h1>54.4%</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Transaction -->
+        <div class="shadow-lg p-4  bg-white rounded-md">
+          <div class="flex justify-between">
+            <div class="flex flex-col">
+              <h1 class=" my-3 ml-1 text-[#6E6B7B] text-md font-bold">Transaction</h1>
+
+            </div>
+            <div class="flex flex-col">
+              <h1>...</h1>
+            </div>
+          </div>
+          <div class="flex justify-between mb-3">
+
+            <div class="flex items-center">
+              <i class="las la-wallet text-2xl text-purple-600 bg-purple-100 p-2 rounded-md mr-3"></i>
+              <div class="flex flex-col items-start ">
+                <h1 class="text-[#5E5873] text-sm font-bold">Wallet
+                </h1>
+                <h1 class="text-xs">Starbucks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-red-500">-$74</h1>
+            </div>
+          </div>
+          <div class="flex justify-between mb-3">
+
+            <div class="flex items-center">
+              <i
+                class="las la-money-check text-2xl text-emerald-600 bg-emerald-50 text-purple-600 bg-purple-100 p-2 rounded-md mr-3"></i>
+              <div class="flex flex-col items-start ">
+                <h1 class="text-[#5E5873] text-sm font-bold">Bank Transfer
+
+                </h1>
+                <h1 class="text-xs">Add Money</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-red-500">-$74</h1>
+            </div>
+          </div>
+          <div class="flex justify-between mb-3">
+
+            <div class="flex items-center">
+              <i class="las la-dollar-sign text-2xl text-red-600 bg-red-50 p-2 rounded-md mr-3"></i>
+              <div class="flex flex-col items-start ">
+                <h1 class="text-[#5E5873] text-sm font-bold">Paypal
+                </h1>
+                <h1 class="text-xs">Add money</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-red-500">-$74</h1>
+            </div>
+          </div>
+          <div class="flex justify-between mb-3">
+
+            <div class="flex items-center">
+              <i class="las la-credit-card text-2xl text-orange-600 bg-orange-50 p-2 rounded-md mr-3"></i>
+              <div class="flex flex-col items-start ">
+                <h1 class="text-[#5E5873] text-sm font-bold">Master card
+                </h1>
+                <h1 class="text-xs">Order Food</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-red-500">-$74</h1>
+            </div>
+          </div>
+          <div class="flex justify-between mb-3">
+
+            <div class="flex items-center">
+              <i class="las la-dollar-sign text-2xl text-purple-600 bg-purple-100 p-2 rounded-md mr-3"></i>
+              <div class="flex flex-col items-start ">
+                <h1 class="text-[#5E5873] text-sm font-bold">Wallet
+                </h1>
+                <h1 class="text-xs">Starbucks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-red-500">-$74</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-auto text-left text-black mt-3 rounded-md">
+        <table class="shadow-lg w-full bg-white  ">
+          <thead class="bg-[#F3F2F7] text-lg ">
+            <tr class="text-[#6E6B7E] text-sm">
+              <th class="p-3">
+                COMPANY
+              </th>
+              <th class="p-3">
+                CATEGORY
+              </th>
+              <th class="p-3">
+                VIEWS
+              </th>
+              <th class="p-3">
+                REVENUE
+              </th>
+              <th class="p-3">
+                SAlES
+              </th>
+            </tr>
+          </thead>
+          <tbody class="p-3">
+            <tr>
+              <td class="pl-3">
+                <div class="flex">
+                  <img src="./assets/images/icons/toolbox.svg" alt="">
+                  <h1 class="flex flex-col ml-2"> <span class="font-bold">Dixons</span> meguc@ruj.io
+                  </h1>
+                </div>
+              </td>
+
+              <td class="flex items-center"><i
+                  class="las la-tv bg-purple-50 text-purple-500 p-2 text-2xl rounded-full mr-2"></i>
+                <h1 class="text-[#6E6B7E]">Technology</h1>
+              </td>
+              <td class="pl-3">23.4k</td>
+              <td class="pl-3">$891.2</td>
+              <td class="pl-3">68%</td>
+            </tr>
+            <tr>
+              <td class="pl-3">
+                <div class="flex">
+                  <img src="../assests/image/icons/toolbox.svg" alt="">
+                  <h1 class="flex flex-col ml-2"> <span class="font-bold">Dixons</span> meguc@ruj.io
+                  </h1>
+                </div>
+              </td>
+              <td>Technology</td>
+              <td class="pl-3">23.4k</td>
+              <td class="pl-3">$891.2</td>
+              <td class="pl-3">68%</td>
+            </tr>
+            <tr>
+              <td class="pl-3">
+                <div class="flex">
+                  <img src="../assests/image/icons/toolbox.svg" alt="">
+                  <h1 class="flex flex-col ml-2"> <span class="font-bold">Dixons</span> meguc@ruj.io
+                  </h1>
+                </div>
+              </td>
+              <td>Technology</td>
+              <td class="pl-3">23.4k</td>
+              <td class="pl-3">$891.2</td>
+              <td class="pl-3">68%</td>
+            </tr>
+            <tr>
+              <td class="pl-3">
+                <div class="flex">
+                  <img src="../assests/image/icons/toolbox.svg" alt="">
+                  <h1 class="flex flex-col ml-2"> <span class="font-bold">Dixons</span> meguc@ruj.io
+                  </h1>
+                </div>
+              </td>
+              <td>Technology</td>
+              <td class="pl-3">23.4k</td>
+              <td class="pl-3">$891.2</td>
+              <td class="pl-3">68%</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </main>
+  </section>
+
+  <script src="./assets/js/dropdown.js"></script>
+</body>
+<script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+
+
+</html>
